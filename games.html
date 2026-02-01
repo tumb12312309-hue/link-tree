@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Game | Dongkak.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0; padding: 0; font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #8B0000 0%, #4A0000 100%);
+            color: white; display: flex; justify-content: center; min-height: 100vh;
+        }
+        .container { width: 100%; max-width: 450px; padding: 40px 20px; text-align: center; }
+        h1 { font-size: 22px; margin-bottom: 25px; text-transform: uppercase; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 10px; }
+        
+        .game-card {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .game-img {
+            width: 70px; height: 70px; border-radius: 12px;
+            object-fit: cover; margin-right: 15px;
+        }
+        .game-info { text-align: left; flex-grow: 1; }
+        .game-name { font-weight: bold; font-size: 16px; display: block; margin-bottom: 5px; }
+        
+        .copy-box {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+        }
+        .copy-box:hover { background: rgba(255,255,255,0.2); }
+        
+        .back-btn {
+            display: inline-block; margin-top: 30px; color: white;
+            text-decoration: none; font-size: 14px; opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>MABAR GAME LAIN KING</h1>
+
+    <div class="game-card">
+        <img src="mlbb.png" class="game-img" alt="Mobile Legends">
+        <div class="game-info">
+            <span class="game-name">Mobile Legends</span>
+            <div class="copy-box" onclick="copyID('468585125')">
+                ID: 468585125 <i class="far fa-copy"></i>
+            </div>
+             <div class="copy-box" onclick="copyID('2396')">
+                SERVER: 2396 <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="wuwa.png" class="game-img" alt="Wuthring Wave">
+        <div class="game-info">
+            <span class="game-name">Wuthering  Wave</span>
+            <div class="copy-box" onclick="copyID('905226905')">
+                ID: 905226905 <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="coc.jpg" class="game-img" alt="coc">
+        <div class="game-info">
+            <span class="game-name">clash of clan</span>
+            <div class="copy-box" onclick="copyID('#LCV0Q0YPC')">
+                ID: #LCV0Q0YPC <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="hok.jpg" class="game-img" alt="hok">
+        <div class="game-info">
+            <span class="game-name">Honor Of Kingg</span>
+            <div class="copy-box" onclick="copyID('ZJK191')">
+                ID: ZJK191 <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="bs.png" class="game-img" alt="bs">
+        <div class="game-info">
+            <span class="game-name">Blodd strike</span>
+            <div class="copy-box" onclick="copyID('586024687123')">
+                ID: 586024687123 <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <img src="RM.jpg" class="game-img" alt="rm">
+        <div class="game-info">
+            <span class="game-name">Racing Master</span>
+            <div class="copy-box" onclick="copyID('6919159171')">
+                ID: 6919159171 <i class="far fa-copy"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali ke Profil</a>
+</div>
+
+<script>
+    function copyID(text) {
+        navigator.clipboard.writeText(text);
+        alert("ID Berhasil Disalin: " + text);
+    }
+</script>
+
+</body>
+</html>
